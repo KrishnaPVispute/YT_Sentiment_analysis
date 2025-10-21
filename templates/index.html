@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comment Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 60%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Comment Sentiment Analysis</h1>
+    <form method="POST" action="/analyze">
+        <label for="youtube_url">Enter YouTube Video URL:</label><br><br>
+        <input type="text" id="youtube_url" name="youtube_url" placeholder="https://youtu.be/your_video_id" required><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
